@@ -76,19 +76,18 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.black,
         centerTitle: false,
         titleSpacing: 0.0,
-        elevation: 3.0,
-
-        actionsIconTheme: IconThemeData(
+        elevation: 10.0,
+        actionsIconTheme: const IconThemeData(
           color: Colors.orange
         ),
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             color: Colors.white,
           ),
         ),
-        title: Text(
+        title: const Text(
           'App Bar Widget',
           style: TextStyle(
             color: Colors.white,
@@ -97,12 +96,12 @@ class _MyHomePageState extends State<MyHomePage> {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.more_vert_outlined),
+            icon: const Icon(Icons.more_vert_outlined),
           ),
 
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.health_and_safety_rounded),
+            icon: const Icon(Icons.health_and_safety_rounded),
           ),
         ],
       ),
