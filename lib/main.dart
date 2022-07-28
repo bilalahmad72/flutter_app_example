@@ -1,3 +1,4 @@
+import 'package:app_bar_example/sizes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -55,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -126,10 +128,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'App Bar',
-              style: TextStyle(
-                fontSize: 40.0,
+            Text(
+              'Size of screen is ${ScreenSize().width} : ${ScreenSize().height}',
+              style: const TextStyle(
+                fontSize: 20.0,
                 fontWeight: FontWeight.w700,
               ),
             ),
